@@ -1,0 +1,485 @@
+var t=alert(prompt("enter your tweet: ")).slice(0,140);
+//this has been used here to slice the text to a limit that 
+is confirmed by the programmer.
+.
+.
+1. lowercase and uppercase
+var name1="aMaNdEoLi";
+name1=name1.toUpperCase(); //  o/p= AMANDEOLI
+name1=name1.toLowerCase(); //  o/p=amandeoli
+.
+exercise:-
+var name1=prompt("Enter the name:- ");
+name1=name1.toUpperCase();
+alert(name1);
+name1=name1.toLowerCase();
+alert(name1);
+.
+.
+.
+.
+.
+.
+
+.
+
+.
+CONVERTING A LOWERCASE NAME INTO A GOOD LOOKIN HNAME
+var name1=prompt("Enter the name:- ");
+
+var firstAlp=name1.slice(0,1);
+var capitalFirstalp=firstAlp.toUpperCase();
+restofAlphabets=restofAlphabets.toLowerCase();
+var restofAlphabets=name.slice(1,name1.length);
+
+var ans= firstAlp + restofAlphabets;
+alert(ans);
+.
+
+.
+
+.
+.
+..
+.
+
+..
+.
+.
+.
+.
+.
+.
+this has been done till now in arithmetic logic building 
+
+var dogA=prompt("Enter the age of the dog ");
+var humanAge= (dogA-2)*4+21;
+alert("Your age is "+ humanAge);
+.
+..
+.
+.
+.
+.
+.
+KAREL IDE FUNCTIONS
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+ 
+ goInCircle();
+ 
+}
+
+function goInCircle()
+{
+   move();
+   turnRight();
+   move();
+   //turnLeft();
+   //move();
+   //turnLeft();
+   //move();
+   //turnLeft();
+}
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+'KAREL IDE FOR NEW FUNCTIONS(https://stanford.edu/~cpiech/karel/images/reference.png)
+
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+ 
+ goInCircle();
+ 
+}
+
+
+
+function goInCircle()
+{
+move10();
+turnLeft();
+move10();
+
+}
+
+
+
+function move10()
+{
+   move();
+move();
+move();
+move();
+
+}.
+.
+.
+.
+.
+.
+.
+.
+MOVE THE CURSOR TO THE DIAGONAL END
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+ 
+ goInCircle();
+ 
+}
+
+
+
+function goInCircle()
+{
+putBeeper();
+move10();
+move10();
+move10();
+move10();
+}
+
+
+
+function move10()
+{
+   move();
+turnLeft();
+move();
+putBeeper();
+turnRight();
+}
+
+MAKE A CHESS BOARD
+.
+.
+.
+function main(){
+   beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+}
+ 
+function goUpTurnRight() {
+   turnRight();
+   move();
+   turnRight();
+}
+ 
+function goUpTurnLeft() {
+   turnLeft();
+   move();
+   turnLeft();
+}
+ 
+function beepersRight() {
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();  
+}
+ 
+function beepersLeft() {
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+}
+.
+.
+.
+.
+.
+.
+.
+.
+.
+~~~~~~~~~~~~~~~~~~~~~~~function call~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function getMilk(money,bottles) {   
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("Total bottles=>  "+calc(money,bottles) +"Till now" );
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+
+  return price%1.5;
+}
+
+function calc(startingMoney,costPerbottle) {
+     var noOfbottles=Math.floor(startingMoney/costPerbottle);
+ return noOfbottles;
+  
+}
+
+var p=getMilk(99,99);
+console.log(p);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+lovecalculator 
+.
+.
+.
+.
+.
+.
+.
+.
+var lovi=prompt("Enter your Names: ");
+var n=Math.random();
+loveScore=Math.floor(n*100);
+if(loveScore>70)
+{
+  
+alert(lovi+"Your love percentage is "+ loveScore+"% Its just like you are made for each other. ");
+}
+if(loveScore>=30 && loveScore<=70)
+{
+  alert("Your love percentage is"+ loveScore);
+}
+else
+{
+alert(lovi+"Your love percentage is "+ loveScore + "like butter and bread.");  
+}
+
+
+.**
+*
+*
+*
+*
+*
+*
+function bmiCalculator (weight, height) {
+  var interpretation=Math.floor(weight/(height*height));  
+  
+  return interpretation;
+}
+
+bmiCalculator=bmiCalculator(30,1.6);
+if(bmiCalculator<18.5)
+{
+  alert("Underweight");
+}
+if(bmiCalculator<18.5 && bmiCalculator<24.9)
+{
+  alert("Normal");
+}
+
+if(bmiCalculator>25 && bmiCalculator<29.9)
+{
+  alert("Overweight");
+}
+if(bmiCalculator>30 && bmiCalculator<34.9)
+{
+  alert("Obese");
+}
+if(bmiCalculator>35)
+{
+  alert("wtf");
+}
+else
+{
+  alert("nope");
+}
+.
+.
+.
+.
+.
+.
+Javascript code for Leap year.
+.
+.
+.
+.
+function isLeap(year) {
+    
+if(year%4===0)
+{
+  if(year%100===0)
+  {
+    if(year%4===0)
+    {
+      alert("Yay it is a leap year.");
+    }
+  }
+  else{
+    alert("Yay it is a leap yr");
+  }
+
+}
+else
+{
+  alert("Sorry but this is not a leap year.")
+}
+}
+
+var year=prompt("Enter the year you want to check but make sure it is a 4digit year: ");
+isLeap(year);
+
+.
+.
+.
+.
+.
+.
+.
+//ARRAY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+var guestList=["Shubham","Priya","Tushar","Prerna","Mridul","Akshat","Mom","Dad"];
+var guest=prompt("Enter your name: ");
+if(guestList.includes(guest)){
+  alert("You are Welcome here!");
+}
+else
+{
+  alert("Sorry next time!");
+}
+~~~~~~~~~~~~~~~~ALEXA WELCOME PARTY VENUE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~var output=[];
+var i=1;
+function arr() {
+ if(i%3===0 && i%5===0)
+ {
+   output.push("FizzBuzz");
+ }
+ else if(i%3===0)
+ {
+   output.push("FizzBuzz");
+ }
+ 
+  else if(i%5===0)
+ {
+   output.push("Buzz");
+ }
+  else
+ {
+  output.push(i);
+ }
+  i++;
+  
+}~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+USE OF RANDOM FUNCTION AT ITS BEST:-
+
+var ans=["Angela","Ben","Jenny","Michael","Chloe"];
+whosPaying(ans);
+
+function whosPaying(names) {
+
+  
+var length=ans.length;
+  var index=Math.floor(Math.random()*length);
+  var person=ans[index];
+  alert(person+" is going to give us lunch today." );
+}.
+.
+.
+.
+.
+..
+.
+.
+.
+.
+.
+.
+.
+fibonacci no javascript
+function fibo(n) 
+{
+  var k=[];
+  if(n===1) 
+  {
+  output=[0];
+  }
+  
+  else if(n===2)
+  {
+  output=[0,1];
+  }
+  else{
+        output=[0,1];
+  for(var i=2;i<n;i++)
+    {
+  
+      output.push(output[output.length-2]+output[output.length-1]);     
+    }
+  return output;
+  
+}
+}
+
+
+
+
+
+output=fibo(9);
+console.log(output);
